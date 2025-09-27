@@ -3,6 +3,9 @@
 A RESTful API for managing recipes, built with **Node.js**, **Express.js**, and **MongoDB** using **Mongoose**.  
 The application follows the **MVC pattern** and provides full **CRUD operations** for recipes.
 
+# Postman documentation link
+https://.postman.co/workspace/My-Workspace~2149278c-1536-4e00-85db-649400f80d1f/collection/40357180-d7e06ec6-4612-4d13-a8c4-fb76941a2fd9?action=share&creator=40357180
+
 ---
 
 ## ✅ Features
