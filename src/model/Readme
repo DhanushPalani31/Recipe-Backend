@@ -1,0 +1,80 @@
+# Recipe Backend API
+
+A RESTful API for managing recipes, built with **Node.js**, **Express.js**, and **MongoDB** using **Mongoose**.  
+The application follows the **MVC pattern** and provides full **CRUD operations** for recipes.
+
+---
+
+## ✅ Features
+
+- Create a new recipe
+- Read all recipes
+- Read a single recipe by ID
+- Update a recipe by ID
+- Delete a recipe by ID
+- Input validation using `express-validator`
+- Error handling for invalid requests
+- Follows MVC architecture
+- Fully deployable on **Render**
+
+---
+
+## 🛠 Tech Stack
+
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Mongoose ODM)
+- **Validation:** express-validator
+- **API Testing:** Postman
+- **Deployment:** Render
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+
+git clone <your-github-repo-url>
+cd Recipe-Backend
+Install dependencies:
+
+bash
+Copy code
+npm install
+Create a .env file in the root directory:
+
+ini
+Copy code
+MONGO_URI=<your-mongodb-atlas-connection-string>
+Run the server locally:
+
+bash
+Copy code
+npm start
+Server runs on:
+
+arduino
+Copy code
+http://localhost:3000
+🌐 API Endpoints
+Base URL: https://your-deployed-app.onrender.com/api/recipes
+
+Method	Endpoint	Description	Body (JSON) Example
+GET	/api/recipes	Get all recipes	—
+GET	/api/recipes/:id	Get recipe by ID	—
+POST	/api/recipes	Create a new recipe	{ "title": "Pasta", "ingredients": ["noodles", "sauce"], "instructions": "Boil noodles and mix sauce." }
+PUT	/api/recipes/:id	Update recipe by ID	{ "title": "Updated Pasta" }
+DELETE	/api/recipes/:id	Delete recipe by ID	—
+
+⚠️ Error Handling
+Invalid IDs or missing recipes return 404 Not Found.
+
+Server errors return 500 Internal Server Error with the error message.
+
+📌 Notes
+Always use the _id returned after creating a recipe for GET, PUT, DELETE requests.
+
+Make sure the .env variables are correctly set for MongoDB connection.
+
+Deployments on Render require process.env.PORT to be used.
+
